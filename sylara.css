@@ -337,3 +337,43 @@
 
     pointer-events:none;
 }
+
+.sylara_divider {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:10px;
+
+    margin:16px auto 20px;
+
+    position:relative;
+    z-index:2;
+}
+
+.sylara_dividerline {
+    width:75px;
+    height:1px;
+
+    background:
+        linear-gradient(
+            to right,
+            transparent,
+            #a6b0aa
+        );
+}
+
+.sylara_dividerline.right {
+    background:
+        linear-gradient(
+            to left,
+            transparent,
+            #a6b0aa
+        );
+}
+
+.sylara_dividerstar {
+    font-size:11px;
+    color:#e6f0d8;
+    letter-spacing:2px;
+}
