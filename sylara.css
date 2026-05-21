@@ -187,3 +187,153 @@
         0 0 10px rgba(255,255,180,0.8),
         0 0 20px rgba(180,255,210,0.4);
 }
+.dot6 {
+    top:40px;
+    left:250px;
+    width:4px;
+    height:4px;
+
+    background:rgba(255,255,210,0.9);
+
+    box-shadow:
+        0 0 6px rgba(255,255,180,0.8),
+        0 0 14px rgba(180,255,210,0.35);
+}
+
+.dot7 {
+    top:175px;
+    right:260px;
+    width:5px;
+    height:5px;
+
+    background:rgba(255,250,200,0.85);
+
+    box-shadow:
+        0 0 8px rgba(255,255,180,0.75),
+        0 0 18px rgba(180,255,210,0.4);
+}
+
+.dot8 {
+    top:250px;
+    left:90px;
+    width:7px;
+    height:7px;
+
+    background:rgba(240,255,180,0.9);
+
+    box-shadow:
+        0 0 10px rgba(255,255,180,0.85),
+        0 0 24px rgba(180,255,210,0.45);
+}
+
+.dot9 {
+    top:120px;
+    left:300px;
+    width:3px;
+    height:3px;
+
+    background:rgba(255,255,220,0.8);
+
+    box-shadow:
+        0 0 5px rgba(255,255,180,0.7),
+        0 0 12px rgba(180,255,210,0.3);
+}
+
+.dot10 {
+    bottom:90px;
+    left:140px;
+    width:6px;
+    height:6px;
+
+    background:rgba(255,245,180,0.85);
+
+    box-shadow:
+        0 0 8px rgba(255,255,180,0.75),
+        0 0 20px rgba(180,255,210,0.4);
+}
+
+.dot11 {
+    bottom:170px;
+    right:170px;
+    width:4px;
+    height:4px;
+
+    background:rgba(240,255,210,0.8);
+
+    box-shadow:
+        0 0 6px rgba(255,255,180,0.7),
+        0 0 14px rgba(180,255,210,0.3);
+}
+
+.dot12 {
+    top:80px;
+    right:80px;
+    width:12px;
+    height:12px;
+
+    background:rgba(255,255,220,0.95);
+
+    opacity:0.85;
+
+    box-shadow:
+        0 0 14px rgba(255,255,180,1),
+        0 0 30px rgba(180,255,210,0.55);
+}
+
+.sylara_stars {
+    position:absolute;
+    top:70px;
+    left:180px;
+
+    font-size:11px;
+    letter-spacing:12px;
+
+    color:rgba(255,255,220,0.20);
+
+    z-index:1;
+}
+
+.sylara_innerborder {
+    position:absolute;
+    inset:12px;
+
+    border:1px solid rgba(255,255,255,0.05);
+
+    border-radius:18px;
+
+    pointer-events:none;
+}
+
+.sylara_bigglow {
+    position:absolute;
+    top:-120px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:420px;
+    height:420px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,255,220,0.06),
+            transparent 70%
+        );
+
+    pointer-events:none;
+}
+
+.sylara_cornerstar {
+    position:absolute;
+    bottom:18px;
+    right:26px;
+
+    font-size:18px;
+
+    color:rgba(255,255,210,0.12);
+
+    pointer-events:none;
+}
