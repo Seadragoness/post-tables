@@ -1,0 +1,68 @@
+.sylara {
+    width: 650px;
+    position: relative;
+    margin-top: 120px;
+    font-family: Georgia;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sylara_main {
+    background: linear-gradient(to bottom, #242927 0%, #1d201f 100%);
+    border: 1px solid #59615d;
+    border-radius: 26px;
+    padding: 360px 42px 42px;
+    position: relative;
+    overflow: hidden;
+
+    box-shadow:
+        0 0 0 4px rgba(255,255,255,0.03),
+        0 0 0 8px rgba(180,255,210,0.04),
+        0 12px 30px rgba(0,0,0,0.30);
+}
+
+.sylara_title {
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: #edf1eb;
+    line-height: 100%;
+    text-shadow: 0 0 8px rgba(255,255,220,0.10);
+}
+
+.sylara_text {
+    max-width: 500px;
+    margin: auto;
+    text-align: justify;
+    font-size: 13px;
+    line-height: 190%;
+    letter-spacing: 0.3px;
+    color: #cfd6d1;
+}
+
+.glowbug {
+    font-family: 'Palatino Linotype', Georgia, serif;
+    font-size: 15px;
+    font-style: italic;
+    letter-spacing: 0.4px;
+    line-height: 180%;
+    color: #f4ffe3;
+
+    text-shadow:
+        0 0 4px rgba(255,255,200,0.55),
+        0 0 10px rgba(180,255,210,0.30),
+        0 0 18px rgba(255,255,180,0.18);
+}
+
+.sylara_img {
+    width: 430px;
+    position: absolute;
+    top: -160px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    pointer-events: none;
+
+    filter: drop-shadow(0 10px 18px rgba(0,0,0,0.20));
+}
