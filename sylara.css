@@ -42,7 +42,7 @@
 }
 
 .glowbug {
-    font-family: 'Palatino Linotype', Georgia, serif;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
     font-size: 15px;
     font-style: italic;
     letter-spacing: 0.4px;
@@ -65,4 +65,125 @@
     pointer-events: none;
 
     filter: drop-shadow(0 10px 18px rgba(0,0,0,0.20));
+}
+
+.sylara_ring1 {
+    position:absolute;
+    top:-10px;
+    left:50%;
+    transform:translateX(-50%);
+    width:260px;
+    height:260px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,0.10);
+    z-index:1;
+    pointer-events:none;
+}
+
+.sylara_ring2 {
+    position:absolute;
+    top:18px;
+    left:50%;
+    transform:translateX(-50%);
+    width:320px;
+    height:320px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,0.05);
+    z-index:1;
+    pointer-events:none;
+}
+
+.sylara_glow {
+    position:absolute;
+    top:35px;
+    left:50%;
+    transform:translateX(-50%);
+    width:220px;
+    height:220px;
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,255,210,0.22),
+            rgba(180,255,210,0.08),
+            transparent 75%
+        );
+
+    filter:blur(12px);
+
+    z-index:0;
+    pointer-events:none;
+}
+
+.sylara_dot {
+    position:absolute;
+    border-radius:50%;
+    z-index:3;
+    pointer-events:none;
+}
+
+.dot1 {
+    top:60px;
+    left:110px;
+    width:8px;
+    height:8px;
+
+    background:rgba(255,255,190,0.95);
+
+    box-shadow:
+        0 0 10px rgba(255,255,180,0.9),
+        0 0 22px rgba(180,255,210,0.5);
+}
+
+.dot2 {
+    top:135px;
+    right:140px;
+    width:6px;
+    height:6px;
+
+    background:rgba(220,255,180,0.9);
+
+    box-shadow:
+        0 0 8px rgba(255,255,180,0.8),
+        0 0 18px rgba(180,255,210,0.45);
+}
+
+.dot3 {
+    top:210px;
+    left:170px;
+    width:5px;
+    height:5px;
+
+    background:rgba(255,245,180,0.85);
+
+    box-shadow:
+        0 0 8px rgba(255,255,180,0.75),
+        0 0 16px rgba(180,255,210,0.35);
+}
+
+.dot4 {
+    top:90px;
+    right:200px;
+    width:10px;
+    height:10px;
+
+    background:rgba(255,255,200,0.95);
+
+    box-shadow:
+        0 0 12px rgba(255,255,180,0.95),
+        0 0 26px rgba(180,255,210,0.6);
+}
+
+.dot5 {
+    bottom:120px;
+    right:90px;
+    width:7px;
+    height:7px;
+
+    background:rgba(240,255,190,0.85);
+
+    box-shadow:
+        0 0 10px rgba(255,255,180,0.8),
+        0 0 20px rgba(180,255,210,0.4);
 }
