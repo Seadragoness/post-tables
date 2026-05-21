@@ -1,0 +1,279 @@
+.historia {
+    width:680px;
+    position:relative;
+    font-family:georgia;
+    margin-top:190px;
+    margin-left:auto;
+    margin-right:auto;
+
+    overflow:visible;
+}
+
+/* ---------------- MOON GLOWS ---------------- */
+
+.historia_glowmain {
+    position:absolute;
+
+    top:-90px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:430px;
+    height:430px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,255,255,0.95) 0%,
+            rgba(240,238,238,0.75) 38%,
+            rgba(160,150,155,0.18) 70%,
+            transparent 100%
+        );
+
+    border:1px solid rgba(255,255,255,0.4);
+
+    box-shadow:
+        0 0 45px rgba(255,255,255,0.30),
+        0 0 80px rgba(120,115,120,0.12);
+
+    z-index:1;
+}
+
+.historia_ring1 {
+    position:absolute;
+
+    top:-55px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:500px;
+    height:500px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(255,255,255,0.22);
+
+    z-index:0;
+}
+
+.historia_ring2 {
+    position:absolute;
+
+    top:-25px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:560px;
+    height:560px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(120,110,115,0.10);
+
+    z-index:0;
+}
+
+/* ---------------- IMAGE ---------------- */
+
+.historia_img {
+    width:640px;
+
+    position:absolute;
+
+    top:-185px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    z-index:5;
+
+    pointer-events:none;
+
+    filter:
+        drop-shadow(
+            0 10px 18px rgba(0,0,0,0.20)
+        );
+}
+
+/* ---------------- MAIN PANEL ---------------- */
+
+.historia_main {
+    background:
+        linear-gradient(
+            to bottom,
+            #e2e0e0 0%,
+            #d3d0d1 100%
+        );
+
+    border:1px solid #8b8588;
+
+    border-radius:24px;
+
+    padding:310px 48px 42px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    isolation:isolate;
+
+    box-shadow:
+        0 0 0 4px rgba(255,255,255,0.45),
+        0 0 0 8px rgba(110,104,108,0.18),
+        0 10px 28px rgba(0,0,0,0.12);
+}
+
+.historia_innerborder {
+    position:absolute;
+
+    inset:12px;
+
+    border:1px solid rgba(255,255,255,0.35);
+
+    border-radius:18px;
+
+    pointer-events:none;
+}
+
+.historia_glass {
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(255,255,255,0.35),
+            rgba(255,255,255,0.02)
+        );
+
+    pointer-events:none;
+}
+
+/* ---------------- TITLE ---------------- */
+
+.historia_title {
+    text-align:center;
+
+    font-size:44px;
+
+    letter-spacing:8px;
+
+    text-transform:uppercase;
+
+    color:#474246;
+
+    line-height:100%;
+
+    position:relative;
+
+    z-index:2;
+
+    text-shadow:
+        0 1px 3px rgba(255,255,255,0.55);
+}
+
+/* ---------------- DIVIDER ---------------- */
+
+.historia_divider {
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    margin:16px auto 18px;
+
+    position:relative;
+
+    z-index:2;
+}
+
+.historia_dividerline {
+    width:70px;
+    height:1px;
+
+    background:#8b8588;
+}
+
+.historia_dividerstar {
+    font-size:11px;
+
+    color:#8b8588;
+
+    letter-spacing:2px;
+}
+
+/* ---------------- BODY TEXT ---------------- */
+
+.historia_text {
+    max-width:520px;
+
+    margin:auto;
+
+    text-align:justify;
+
+    font-size:13px;
+
+    letter-spacing:0.4px;
+
+    line-height:190%;
+
+    color:#5f595d;
+
+    position:relative;
+
+    z-index:2;
+
+    padding:0 8px;
+}
+
+/* ---------------- QUOTE ---------------- */
+
+.historia_quote {
+    margin-top:26px;
+
+    text-align:center;
+
+    font-size:10px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    color:#8b8588;
+
+    line-height:180%;
+
+    position:relative;
+
+    z-index:2;
+}
+
+/* ---------------- SNOWFLAKE ---------------- */
+
+.historia_snowflake {
+    position:absolute;
+
+    bottom:-25px;
+    right:-8px;
+
+    font-size:120px;
+
+    color:rgba(255,255,255,0.08);
+
+    font-family:"Times New Roman";
+
+    pointer-events:none;
+}
