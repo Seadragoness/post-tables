@@ -1,0 +1,318 @@
+```css
+.rhaegel {
+    width:690px;
+    position:relative;
+    font-family:georgia;
+    margin-top:170px;
+    margin-left:auto;
+    margin-right:auto;
+
+    overflow:visible;
+}
+
+/* ---------------- MAIN GEOMETRY ---------------- */
+
+.rhaegel_geometry {
+    position:absolute;
+    top:-40px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:520px;
+    height:320px;
+
+    z-index:1;
+    pointer-events:none;
+}
+
+.rhaegel_diamond1 {
+    position:absolute;
+    top:0;
+    left:50%;
+
+    transform:translateX(-50%) rotate(45deg);
+
+    width:220px;
+    height:220px;
+
+    border:1px solid rgba(255,255,255,0.10);
+
+    background:rgba(255,255,255,0.015);
+
+    backdrop-filter:blur(2px);
+}
+
+.rhaegel_diamond2 {
+    position:absolute;
+    top:-28px;
+    left:50%;
+
+    transform:translateX(-50%) rotate(45deg);
+
+    width:280px;
+    height:280px;
+
+    border:1px solid rgba(255,180,240,0.08);
+}
+
+.rhaegel_circle {
+    position:absolute;
+    top:25px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:320px;
+    height:320px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(255,255,255,0.06);
+}
+
+.rhaegel_hline {
+    position:absolute;
+    top:155px;
+    left:20px;
+
+    width:480px;
+    height:1px;
+
+    background:
+        linear-gradient(
+            to right,
+            transparent,
+            rgba(255,255,255,0.10),
+            transparent
+        );
+}
+
+.rhaegel_vline {
+    position:absolute;
+    top:10px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:1px;
+    height:280px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            transparent,
+            rgba(255,255,255,0.08),
+            transparent
+        );
+}
+
+.rhaegel_starset1 {
+    position:absolute;
+    top:58px;
+    left:95px;
+
+    font-size:10px;
+    letter-spacing:10px;
+
+    color:rgba(255,255,255,0.12);
+}
+
+.rhaegel_starset2 {
+    position:absolute;
+    bottom:42px;
+    right:85px;
+
+    font-size:10px;
+    letter-spacing:10px;
+
+    color:rgba(255,180,240,0.10);
+}
+
+/* ---------------- IMAGE ---------------- */
+
+.rhaegel_img {
+    width:650px;
+
+    position:absolute;
+    top:-170px;
+    left:50px;
+
+    z-index:5;
+
+    pointer-events:none;
+
+    filter:
+        drop-shadow(
+            0 8px 18px rgba(0,0,0,0.22)
+        );
+}
+
+/* ---------------- MAIN PANEL ---------------- */
+
+.rhaegel_main {
+    background:
+        linear-gradient(
+            to bottom,
+            #1d1b22 0%,
+            #26242d 100%
+        );
+
+    border:1px solid #5f5667;
+
+    border-radius:24px;
+
+    padding:250px 48px 42px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    isolation:isolate;
+
+    box-shadow:
+        0 0 0 4px rgba(255,255,255,0.03),
+        0 0 0 8px rgba(255,170,240,0.08),
+        0 12px 30px rgba(0,0,0,0.35);
+}
+
+.rhaegel_innerborder {
+    position:absolute;
+    inset:12px;
+
+    border:1px solid rgba(255,255,255,0.06);
+
+    border-radius:18px;
+
+    pointer-events:none;
+}
+
+/* ---------------- TITLE ---------------- */
+
+.rhaegel_title {
+    text-align:center;
+
+    font-size:44px;
+
+    letter-spacing:8px;
+
+    text-transform:uppercase;
+
+    color:#f1e6f6;
+
+    line-height:100%;
+
+    position:relative;
+
+    z-index:2;
+
+    text-shadow:
+        0 0 8px rgba(255,170,240,0.18);
+}
+
+/* ---------------- DIVIDER ---------------- */
+
+.rhaegel_divider {
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    margin:16px auto 20px;
+
+    position:relative;
+
+    z-index:2;
+}
+
+.rhaegel_dividerline {
+    width:80px;
+    height:1px;
+
+    background:
+        linear-gradient(
+            to right,
+            transparent,
+            #9f8ca8
+        );
+}
+
+.rhaegel_dividerline.right {
+    background:
+        linear-gradient(
+            to left,
+            transparent,
+            #9f8ca8
+        );
+}
+
+.rhaegel_dividerstar {
+    font-size:12px;
+
+    color:#ffb3ea;
+
+    letter-spacing:2px;
+}
+
+/* ---------------- BODY TEXT ---------------- */
+
+.rhaegel_text {
+    max-width:530px;
+
+    margin:auto;
+
+    text-align:justify;
+
+    font-size:13px;
+
+    line-height:190%;
+
+    letter-spacing:0.3px;
+
+    color:#d1c8d6;
+
+    position:relative;
+
+    z-index:2;
+}
+
+/* ---------------- FOOTER QUOTE ---------------- */
+
+.rhaegel_quote {
+    margin-top:26px;
+
+    text-align:center;
+
+    font-size:10px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    color:#9b90a4;
+
+    line-height:180%;
+
+    position:relative;
+
+    z-index:2;
+}
+
+/* ---------------- MOON ---------------- */
+
+.rhaegel_moon {
+    position:absolute;
+
+    bottom:-18px;
+    right:6px;
+
+    font-size:95px;
+
+    color:rgba(255,255,255,0.03);
+
+    pointer-events:none;
+}
+```
