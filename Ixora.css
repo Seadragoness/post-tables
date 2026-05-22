@@ -205,25 +205,27 @@ color:#f7e8cf;
 }
 
 /* IXORA SPEECH */
-.eclipsedawn-text .ixora{
-display:inline;
+span.ixora{
 
-font-family:garamond, serif;
-font-size:18px;
-font-style:normal;
-font-weight:bold;
+all:unset;
 
-color:#ffb15a;
+font-family:garamond, serif !important;
+font-size:18px !important;
+font-weight:bold !important;
 
-letter-spacing:.5px;
-line-height:185%;
+color:#ffb15a !important;
+
+letter-spacing:.5px !important;
+line-height:185% !important;
+
+display:inline !important;
 
 text-shadow:
 0 0 2px #fff4d6,
 0 0 6px #ffcf6b,
 0 0 14px #ff9d00,
 0 0 24px #ff5e00,
-0 0 36px #ff3c0088;
+0 0 36px #ff3c0088 !important;
 }
 
 /* QUOTE */
