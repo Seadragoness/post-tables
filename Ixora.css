@@ -206,28 +206,29 @@ color:#f7e8cf;
 
 /* SPEECH STYLE THROUGH [b] */
 .eclipsedawn-text span[style*="bold"],
+.eclipsedawn-text span[style*="bold"] *,
 .eclipsedawn-text b,
-.eclipsedawn-text strong{
+.eclipsedawn-text b *,
+.eclipsedawn-text strong,
+.eclipsedawn-text strong *{
 
 font-family:garamond, serif !important;
 font-size:18px !important;
 
 font-style:normal !important;
-
-/* KEEP SOME BOLDNESS */
 font-weight:bold !important;
 
-color:#ffb15a !important;
+color:#ffad47 !important;
 
 letter-spacing:.5px !important;
 line-height:185% !important;
 
 text-shadow:
 0 0 2px #fff4d6,
-0 0 6px #ffcf6b,
-0 0 14px #ff9d00,
-0 0 24px #ff5e00,
-0 0 36px #ff3c0088 !important;
+0 0 8px #ffcf6b,
+0 0 16px #ff9d00,
+0 0 28px #ff5e00,
+0 0 42px #ff3c00 !important;
 }
 
 /* QUOTE */
