@@ -204,22 +204,27 @@ font-family:trebuchet ms;
 color:#f7e8cf;
 }
 
-/* SPEECH STYLE THROUGH [b] */
-.eclipsedawn-text span[style*="bold"],
-.eclipsedawn-text span[style*="bold"] *,
-.eclipsedawn-text b,
-.eclipsedawn-text b *,
-.eclipsedawn-text strong,
-.eclipsedawn-text strong *{
+/* IXORA SPEECH */
+Ixora{
+display:inline;
 
-color:red !important;
-font-size:30px !important;
-background:yellow !important;
+font-family:garamond, serif;
+font-size:18px;
+font-style:normal;
+font-weight:bold;
+
+color:#ffb15a;
+
+letter-spacing:.5px;
+line-height:185%;
 
 text-shadow:
-0 0 20px red !important;
+0 0 2px #fff4d6,
+0 0 6px #ffcf6b,
+0 0 14px #ff9d00,
+0 0 24px #ff5e00,
+0 0 36px #ff3c0088;
 }
-
 /* QUOTE */
 .eclipsedawn-quote{
 margin-top:26px;
