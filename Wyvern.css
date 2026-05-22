@@ -1,0 +1,411 @@
+.wyvern {
+    width:700px;
+    position:relative;
+    font-family:georgia;
+    margin-top:70px;
+    margin-left:auto;
+    margin-right:auto;
+
+    overflow:visible;
+}
+
+/* ---------------- ATMOSPHERIC GLOWS ---------------- */
+
+.wyvern_glow1 {
+    position:absolute;
+    top:60px;
+    left:170px;
+
+    width:420px;
+    height:420px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(40,120,255,0.14),
+            rgba(20,40,80,0.04),
+            transparent 75%
+        );
+
+    filter:blur(28px);
+
+    z-index:0;
+}
+
+.wyvern_glow2 {
+    position:absolute;
+    top:190px;
+    left:130px;
+
+    width:420px;
+    height:420px;
+
+    border-radius:10%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(0,160,255,0.045),
+            transparent 70%
+        );
+
+    filter:blur(42px);
+
+    z-index:0;
+}
+
+/* ---------------- PARTICLES ---------------- */
+
+.wyvern_particle {
+    position:absolute;
+    border-radius:50%;
+    z-index:2;
+}
+
+.wyvern_p1 {
+    top:60px;
+    left:120px;
+    width:8px;
+    height:8px;
+
+    background:#7dc6ff;
+
+    opacity:0.65;
+
+    box-shadow:
+        0 0 12px rgba(125,198,255,0.55),
+        0 0 24px rgba(125,198,255,0.30);
+}
+
+.wyvern_p2 {
+    top:120px;
+    left:260px;
+    width:5px;
+    height:5px;
+
+    background:#d7eeff;
+
+    opacity:0.55;
+
+    box-shadow:
+        0 0 10px rgba(215,238,255,0.45),
+        0 0 18px rgba(215,238,255,0.22);
+}
+
+.wyvern_p3 {
+    top:90px;
+    right:110px;
+    width:7px;
+    height:7px;
+
+    background:#53b4ff;
+
+    opacity:0.65;
+
+    box-shadow:
+        0 0 14px rgba(83,180,255,0.55),
+        0 0 28px rgba(83,180,255,0.28);
+}
+
+.wyvern_p4 {
+    top:240px;
+    left:180px;
+    width:6px;
+    height:6px;
+
+    background:#99d8ff;
+
+    opacity:0.5;
+
+    box-shadow:
+        0 0 12px rgba(153,216,255,0.40),
+        0 0 24px rgba(153,216,255,0.20);
+}
+
+.wyvern_p5 {
+    top:300px;
+    right:160px;
+    width:9px;
+    height:9px;
+
+    background:#3b95ff;
+
+    opacity:0.55;
+
+    box-shadow:
+        0 0 14px rgba(59,149,255,0.50),
+        0 0 30px rgba(59,149,255,0.24);
+}
+
+.wyvern_p6 {
+    bottom:170px;
+    left:120px;
+    width:6px;
+    height:6px;
+
+    background:#c4ebff;
+
+    opacity:0.55;
+
+    box-shadow:
+        0 0 12px rgba(196,235,255,0.40),
+        0 0 22px rgba(196,235,255,0.18);
+}
+
+.wyvern_p7 {
+    bottom:120px;
+    right:110px;
+    width:5px;
+    height:5px;
+
+    background:#6bc5ff;
+
+    opacity:0.5;
+
+    box-shadow:
+        0 0 10px rgba(107,197,255,0.42),
+        0 0 20px rgba(107,197,255,0.20);
+}
+
+.wyvern_p8 {
+    top:420px;
+    left:310px;
+    width:4px;
+    height:4px;
+
+    background:#8ed0ff;
+
+    opacity:0.5;
+
+    box-shadow:
+        0 0 8px rgba(142,208,255,0.35),
+        0 0 16px rgba(142,208,255,0.16);
+}
+
+/* ---------------- MAIN PANEL ---------------- */
+
+.wyvern_main {
+    background:
+        linear-gradient(
+            to bottom,
+            #111827 0%,
+            #161d2b 100%
+        );
+
+    border:1px solid #3c4d66;
+
+    border-radius:28px;
+
+    padding:28px 48px 42px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    isolation:isolate;
+
+    box-shadow:
+        0 0 0 4px rgba(255,255,255,0.03),
+        0 0 0 8px rgba(80,140,255,0.08),
+        0 18px 38px rgba(0,0,0,0.45);
+}
+
+.wyvern_innerborder {
+    position:absolute;
+    inset:12px;
+
+    border:
+        1px solid rgba(255,255,255,0.05);
+
+    border-radius:20px;
+
+    pointer-events:none;
+}
+
+.wyvern_overlay {
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(60,120,255,0.14),
+            transparent 55%
+        );
+
+    pointer-events:none;
+}
+
+/* ---------------- SHADOW ---------------- */
+
+.wyvern_shadow {
+    position:absolute;
+    top:170px;
+    left:70px;
+
+    width:240px;
+    height:260px;
+
+    background:
+        radial-gradient(
+            ellipse at center,
+            rgba(0,0,0,0.62),
+            transparent 72%
+        );
+
+    filter:blur(32px);
+
+    z-index:1;
+}
+
+/* ---------------- IMAGE ---------------- */
+
+.wyvern_img {
+    width:290px;
+
+    float:left;
+
+    margin:
+        -20px 28px 8px -10px;
+
+    position:relative;
+
+    z-index:5;
+
+    pointer-events:none;
+
+    filter:
+        drop-shadow(0 42px 40px rgba(0,0,0,0.92))
+        drop-shadow(0 14px 24px rgba(40,120,255,0.25))
+        drop-shadow(0 0 18px rgba(80,160,255,0.16));
+}
+
+/* ---------------- TITLE ---------------- */
+
+.wyvern_title {
+    text-align:center;
+
+    font-size:38px;
+
+    font-family:'Palatino Linotype', cursive;
+
+    letter-spacing:8px;
+
+    text-transform:uppercase;
+
+    color:#dceeff;
+
+    line-height:100%;
+
+    position:relative;
+
+    z-index:2;
+
+    text-shadow:
+        0 0 14px rgba(120,180,255,0.55);
+
+    margin-top:15px;
+}
+
+/* ---------------- DIVIDER ---------------- */
+
+.wyvern_divider {
+    text-align:center;
+
+    margin:
+        14px auto 28px;
+
+    position:relative;
+
+    z-index:2;
+}
+
+.wyvern_divider img {
+    width:260px;
+
+    opacity:0.85;
+
+    filter:
+        drop-shadow(
+            0 0 12px rgba(120,180,255,0.28)
+        );
+}
+
+/* ---------------- TEXT ---------------- */
+
+.wyvern_text {
+    text-align:justify;
+
+    font-size:13px;
+
+    line-height:205%;
+
+    letter-spacing:0.4px;
+
+    color:#c4d3e6;
+
+    position:relative;
+
+    z-index:2;
+
+    text-shadow:
+        0 0 8px rgba(120,180,255,0.05);
+}
+
+.wyvern_textglow {
+    color:#d7ecff;
+
+    text-shadow:
+        0 0 8px rgba(120,180,255,0.14);
+}
+
+/* ---------------- QUOTE ---------------- */
+
+.wyvern_quote {
+    clear:both;
+
+    margin-top:32px;
+
+    text-align:center;
+
+    font-size:10px;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    color:#8fc8ef;
+
+    line-height:180%;
+
+    position:relative;
+
+    z-index:2;
+
+    text-shadow:
+        0 0 12px rgba(120,180,255,0.35);
+}
+
+/* ---------------- SYMBOL ---------------- */
+
+.wyvern_symbol {
+    position:absolute;
+
+    bottom:-24px;
+    right:6px;
+
+    font-size:110px;
+
+    color:rgba(140,180,255,0.08);
+
+    pointer-events:none;
+
+    text-shadow:
+        0 0 20px rgba(120,180,255,0.18);
+}
