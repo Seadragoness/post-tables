@@ -221,11 +221,10 @@ letter-spacing:.2px !important;
 
 /* ORANGE GLOW */
 text-shadow:
-0 0 2px #fff0cc,
-0 0 6px #ffcf6b,
-0 0 12px #ff9d00,
-0 0 20px #ff5e00aa !important;
-}
+0 0 1px #fff0cc,
+0 0 4px #ffcf6b,
+0 0 8px #ff9d00,
+0 0 12px #ff5e0066 !important;
 
 /* QUOTE */
 .eclipsedawn-quote{
