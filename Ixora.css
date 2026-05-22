@@ -212,23 +212,12 @@ color:#f7e8cf;
 .eclipsedawn-text strong,
 .eclipsedawn-text strong *{
 
-font-family:garamond, serif !important;
-font-size:18px !important;
-
-font-style:normal !important;
-font-weight:bold !important;
-
-color:#ffad47 !important;
-
-letter-spacing:.5px !important;
-line-height:185% !important;
+color:red !important;
+font-size:30px !important;
+background:yellow !important;
 
 text-shadow:
-0 0 2px #fff4d6,
-0 0 8px #ffcf6b,
-0 0 16px #ff9d00,
-0 0 28px #ff5e00,
-0 0 42px #ff3c00 !important;
+0 0 20px red !important;
 }
 
 /* QUOTE */
