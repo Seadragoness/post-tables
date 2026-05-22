@@ -209,12 +209,22 @@ span.ixora{
 
 all:unset;
 
-color:lime !important;
-background:red !important;
-
-font-size:40px !important;
-
 display:inline !important;
+
+font-family:trebuchet ms !important;
+font-size:13px !important;
+line-height:190% !important;
+
+color:#ffb15a !important;
+
+letter-spacing:.2px !important;
+
+/* ORANGE GLOW */
+text-shadow:
+0 0 2px #fff0cc,
+0 0 6px #ffcf6b,
+0 0 12px #ff9d00,
+0 0 20px #ff5e00aa !important;
 }
 
 /* QUOTE */
