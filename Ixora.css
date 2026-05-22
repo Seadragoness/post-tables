@@ -209,23 +209,12 @@ span.ixora{
 
 all:unset;
 
-font-family:garamond, serif !important;
-font-size:18px !important;
-font-weight:bold !important;
+color:lime !important;
+background:red !important;
 
-color:#ffb15a !important;
-
-letter-spacing:.5px !important;
-line-height:185% !important;
+font-size:40px !important;
 
 display:inline !important;
-
-text-shadow:
-0 0 2px #fff4d6,
-0 0 6px #ffcf6b,
-0 0 14px #ff9d00,
-0 0 24px #ff5e00,
-0 0 36px #ff3c0088 !important;
 }
 
 /* QUOTE */
