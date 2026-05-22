@@ -205,7 +205,7 @@ color:#f7e8cf;
 }
 
 /* IXORA SPEECH */
-ixora{
+.eclipsedawn-text .ixora{
 display:inline;
 
 font-family:garamond, serif;
@@ -225,6 +225,7 @@ text-shadow:
 0 0 24px #ff5e00,
 0 0 36px #ff3c0088;
 }
+
 /* QUOTE */
 .eclipsedawn-quote{
 margin-top:26px;
