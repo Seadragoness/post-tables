@@ -211,20 +211,23 @@ color:#f7e8cf;
 
 font-family:garamond, serif !important;
 font-size:18px !important;
-font-style:normal !important;
-font-weight:normal !important;
 
-color:#ffbf6b !important;
+font-style:normal !important;
+
+/* KEEP SOME BOLDNESS */
+font-weight:bold !important;
+
+color:#ffb15a !important;
 
 letter-spacing:.5px !important;
 line-height:185% !important;
 
-/* STRONGER GLOW */
 text-shadow:
-0 0 3px #fff2cc,
-0 0 8px #ffae42,
-0 0 14px #ff7b00,
-0 0 20px #ff5e00aa !important;
+0 0 2px #fff4d6,
+0 0 6px #ffcf6b,
+0 0 14px #ff9d00,
+0 0 24px #ff5e00,
+0 0 36px #ff3c0088 !important;
 }
 
 /* QUOTE */
