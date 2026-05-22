@@ -210,17 +210,21 @@ color:#f7e8cf;
 .eclipsedawn-text strong{
 
 font-family:garamond, serif !important;
-font-size:17px !important;
+font-size:18px !important;
 font-style:normal !important;
 font-weight:normal !important;
 
-color:#ffe7c2 !important;
+color:#ffbf6b !important;
 
-letter-spacing:.4px !important;
+letter-spacing:.5px !important;
 line-height:185% !important;
 
+/* STRONGER GLOW */
 text-shadow:
-0 0 5px #ffcf6b33 !important;
+0 0 3px #fff2cc,
+0 0 8px #ffae42,
+0 0 14px #ff7b00,
+0 0 20px #ff5e00aa !important;
 }
 
 /* QUOTE */
