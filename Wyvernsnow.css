@@ -11,11 +11,14 @@ linear-gradient(to bottom,
 #dce8f6 35%,
 #bccfe8 100%);
 border:3px solid #3f5168;
+
 box-shadow:
+0 12px 35px rgba(18,28,45,.16),
 0 0 0 1px rgba(45,58,78,.42),
 0 0 24px rgba(30,40,60,.18),
 inset 0 0 25px rgba(255,255,255,.55),
 inset 0 0 70px rgba(180,215,255,.08);
+
 font-family:georgia;
 }
 
