@@ -1,13 +1,14 @@
-<style>
-
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&display=swap');
 
 .hinata-wrap{
 width:920px;
 margin:auto;
-background:linear-gradient(to bottom,
+
+background:
+linear-gradient(to bottom,
 rgba(3,5,16,0.98),
 rgba(4,6,20,0.99));
+
 border-radius:30px;
 overflow:hidden;
 position:relative;
@@ -15,7 +16,9 @@ position:relative;
 box-shadow:
 0 0 28px rgba(120,170,255,0.12),
 0 0 70px rgba(0,0,0,0.88),
-inset 0 0 40px rgba(255,255,255,0.015);
+0 0 120px rgba(20,30,70,0.25),
+inset 0 0 40px rgba(255,255,255,0.015),
+inset 0 0 120px rgba(0,0,0,0.35);
 }
 
 .hinata-image{
@@ -25,8 +28,9 @@ height:560px;
 background:
 linear-gradient(to bottom,
 rgba(3,6,18,0.02) 0%,
-rgba(3,6,18,0.18) 60%,
-rgba(4,6,20,0.96) 100%),
+rgba(3,6,18,0.10) 45%,
+rgba(3,6,18,0.35) 70%,
+rgba(4,6,20,0.98) 100%),
 url('https://i.imgur.com/KnmWW1S.png');
 
 background-size:cover;
@@ -49,17 +53,19 @@ pointer-events:none;
 box-shadow:
 inset 0 0 0 1px rgba(255,255,255,0.025),
 inset 0 0 18px rgba(170,210,255,0.05),
-inset 0 0 45px rgba(0,0,0,0.45);
+inset 0 0 45px rgba(0,0,0,0.45),
+0 0 22px rgba(100,150,255,0.06);
 }
 
 .hinata-title{
 position:absolute;
-bottom:-10px;
+bottom:-12px;
 left:50%;
 transform:translateX(-50%);
 
 font-family:'Cormorant Garamond', serif;
-font-size:40px;
+font-size:56px;
+font-weight:600;
 letter-spacing:6px;
 text-transform:uppercase;
 
@@ -68,63 +74,70 @@ color:#edf6ff;
 white-space:nowrap;
 
 text-shadow:
-0 0 10px rgba(180,220,255,0.55),
-0 0 24px rgba(120,180,255,0.22);
+0 0 8px rgba(220,235,255,0.95),
+0 0 22px rgba(170,210,255,0.55),
+0 0 40px rgba(120,170,255,0.28);
 }
 
 .hinata-moon{
-font-size:24px;
+font-size:26px;
 vertical-align:middle;
+
 color:#edf6ff;
 
 text-shadow:
-0 0 10px rgba(200,230,255,0.85),
-0 0 22px rgba(120,180,255,0.45);
+0 0 10px rgba(220,235,255,0.9),
+0 0 24px rgba(120,180,255,0.45);
 }
 
 .hinata-glow{
-height:90px;
-margin-top:-45px;
+height:120px;
+margin-top:-65px;
 
 background:
 radial-gradient(
 ellipse at center,
-rgba(110,170,255,0.16) 0%,
-rgba(70,120,220,0.08) 35%,
+rgba(120,180,255,0.22) 0%,
+rgba(90,140,255,0.10) 32%,
 rgba(4,6,20,0) 75%
 );
 
-filter:blur(10px);
-opacity:0.9;
+filter:blur(14px);
+opacity:1;
 }
 
 .hinata-text{
 width:72%;
 margin:auto;
+
 padding:0 0 42px 0;
-margin-top:-18px;
+margin-top:-24px;
+
+position:relative;
+z-index:5;
 }
 
 .hinata-divider{
 width:72%;
 height:1px;
-margin:0 auto 28px auto;
+margin:0 auto 34px auto;
 
 background:
 linear-gradient(to right,
 transparent,
-rgba(190,225,255,0.75),
+rgba(190,225,255,0.85),
 transparent);
 
 box-shadow:
-0 0 8px rgba(140,190,255,0.35);
+0 0 12px rgba(140,190,255,0.45),
+0 0 30px rgba(100,150,255,0.15);
 }
 
 .hinata-body{
 width:100%;
 margin:auto;
 
-padding:34px 26px 8px 26px;
+padding:36px 32px 12px 32px;
 
 border-left:
 1px solid rgba(190,220,255,0.16);
@@ -134,44 +147,42 @@ border-right:
 
 background:
 linear-gradient(to bottom,
-rgba(90,140,255,0.05),
-rgba(0,0,0,0) 30%);
+rgba(90,140,255,0.06),
+rgba(0,0,0,0) 32%);
 
 box-shadow:
-inset 12px 0 18px -18px rgba(120,180,255,0.18),
-inset -12px 0 18px -18px rgba(120,180,255,0.18);
+inset 16px 0 22px -20px rgba(120,180,255,0.18),
+inset -16px 0 22px -20px rgba(120,180,255,0.18);
 
 font-family:Georgia, serif;
 font-size:14px;
-line-height:1.95em;
+line-height:2em;
 color:#d7deea;
 text-align:justify;
 }
 
 .hinata-speechwrap{
 width:90%;
-margin:22px auto 8px auto;
+margin:28px auto 8px auto;
 text-align:center;
 }
 
 .hinata-speech{
 font-family:'Times New Roman', serif;
-font-size:17px;
+font-size:20px;
 font-style:italic;
 
 color:transparent;
 
 background:
 linear-gradient(to right,
-#dfefff,
-#9fc7ff,
+#edf6ff,
+#a9ccff,
 #edf6ff);
 
 -webkit-background-clip:text;
 background-clip:text;
 
 text-shadow:
-0 0 10px rgba(160,210,255,0.35);
+0 0 12px rgba(170,210,255,0.45);
 }
-
-</style>
