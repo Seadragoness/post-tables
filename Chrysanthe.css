@@ -189,14 +189,14 @@ color:#b89c7f;
 }
 
 .chrys-quote{
-    font-family:'Imperial Script', cursive;
-    font-size:34px;
-    line-height:110%;
-    letter-spacing:0.5px;
-    color:#f4d78a;
+    font-family:'Allura', cursive;
+    font-size:24px;
+    line-height:125%;
+    letter-spacing:0.4px;
+    color:#f3d889;
     text-shadow:
-        0 0 2px #fff5d6,
-        0 0 6px rgba(240, 200, 120, 0.5);
+        0 0 2px rgba(255,248,220,0.8),
+        0 0 5px rgba(212,168,79,0.35);
 }
 
 background:
